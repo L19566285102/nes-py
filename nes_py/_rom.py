@@ -194,8 +194,8 @@ class ROM(object):
 
     @property
     def prg_rom_stop(self):
-        """The exclusive stopping index of the PRG ROM."""
-        return self.prg_rom_start + self.prg_rom_size * 2**10
+    """The exclusive stopping index of the PRG ROM."""
+    return int(self.prg_rom_start) + int(self.prg_rom_size) * 2**10
 
     @property
     def prg_rom(self):
